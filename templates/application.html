@@ -1,0 +1,29 @@
+<h4>Application Form</h4>
+<form action="/jobpage/{{job['id']}}/apply" method="POST">
+    <div class="mb-2">
+        <label>Full Name</label></br>
+        <input type="text" name='full_name' class="form-control mb-2" placeholder="Full Name">
+    </div>
+    <div class="mb-2">
+        <label>Email</label></br>
+        <input type="email" name='email' class="form-control mb-2" placeholder="Email Address">
+    </div>
+
+    <div class="mb-2">
+        <label>Linkedin URL</label></br>
+        <input type="'text" name='linkedin_url' class="form-control mb-2" placeholder="https://linkedin.com/in/johndoe">
+    </div>
+    <div>
+        <label>Education</label></br>
+        <input type="text" name='education' class="form-control mb-2" placeholder="Your highest qualification">
+    </div>
+    <div>
+        <label>Work Experience</label></br>
+        <textarea name='experience' class="form-control mb-2" placeholder="Describe your relevant experience"></textarea>
+    </div>
+    <div class="mb-2">
+        <button type="submit" class="btn btn-primary">Submit Application</button>
+    </div>
+
+    
+</form>

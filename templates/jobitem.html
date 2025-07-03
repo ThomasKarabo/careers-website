@@ -13,11 +13,6 @@
         {%else%}
         <div><p>Salary is not available</p></div>
         {%endif%}
-        {%if 'experience' in job%}
-        <div>Experience: {{job['experience']}}</div>
-        {%else%}
-        <div><p>Experience is not available</p></div>
-        {%endif%}
     </div>
-    <div class="col-3"><button class="btn btn-outline-primary">Apply Here</button></div>
+    <div class="col-3"><a href="jobpage/{{job['id']}}" class="btn btn-outline-primary">Apply Here</a></div>
 </div>

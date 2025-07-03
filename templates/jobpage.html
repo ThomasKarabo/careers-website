@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{job.title}} - Data Careers</title>
+        {%include 'bootstrap.html'%}
+     </head>
+    <body>
+        {%include 'nav.html'%}
+        <h3>Title</h3>
+        <p>{{job.title}}</p>
+        <h3>Location</h3>
+        <p>{{job.location}}</p>
+        <h3>Salary</h3>
+        <p>R{{job.salary}}</p>
+        <h3>Responsibilities</h3>
+        <p>{{job.responsibilities}}</p>
+        <h3>Requirements</h3>
+        <p>{{job.requirements}}</p>
+        {%include 'application.html'%}
+        {%include 'footer.html'%}
+    </body>
+</html>
